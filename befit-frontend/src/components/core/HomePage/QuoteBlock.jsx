@@ -12,7 +12,9 @@ const QuoteBlock = ({
   codecolor,
 }) => {
   return (
-    <div className={`flex ${position} my-20 gap-5 justify-between`}>
+    <div
+      className={`flex xs:flex-col sm:${position} my-20 gap-5 justify-between`}
+    >
       {/* section1 */}
       <div className="flex flex-col w-[50%] gap-8">
         {heading}
@@ -48,7 +50,7 @@ const QuoteBlock = ({
           className={`w-[90%] flex flex-col gap-2 font-bold font-mono ${codecolor} pr-2`}
         >
           <TypeAnimation
-            sequnece={[codeblock, 2000, ""]}
+            sequence={[codeblock, 2000, ""]}
             repeat={Infinity}
             cursor={true}
             style={{
