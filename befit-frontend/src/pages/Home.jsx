@@ -4,6 +4,7 @@ import CTAButton from "../components/core/HomePage/Button";
 import HighlightText from "../components/core/HomePage/HighlightText";
 import Banner from "../assets/Images/banner.mp4";
 import QuoteBlock from "../components/core/HomePage/QuoteBlock";
+import ExploreMore from "../components/core/HomePage/ExploreMore";
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ text-black justify-between px-4 sm:px-6 lg:px-8"
 
         {/* video section */}
         <div className="mx-3 my-12 shadow-blue-200">
-          <video muted loop autoplay controls>
+          <video muted loop autoPlay>
             <source src={Banner} alt="banner.mp4" type="video/mp4" />
           </video>
         </div>
@@ -61,7 +62,7 @@ text-black justify-between px-4 sm:px-6 lg:px-8"
               active: false,
             }}
             codeblock={`The Bhagavad Gita is an ancient scripture\n that narrates part of the story of Hinduism.\n When you begin practicing yoga, \nit is genuinely like the start of a whole other journey,\n especially the deeper connection to the self. 
-\nThere are many who experience a sort of coming home feeling`}
+`}
             codecolor={"text-orange-25"}
           />
         </div>
@@ -95,6 +96,7 @@ text-black justify-between px-4 sm:px-6 lg:px-8"
           />
         </div>
       </div>
+      <ExploreMore />
     </div>
   );
 };
