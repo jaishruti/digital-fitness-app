@@ -2,6 +2,7 @@ import React from "react";
 import { HomePageExplore } from "../../../data/Homepage-explore";
 import HighlightText from "./HighlightText";
 import { useState } from "react";
+import CourseCard from "./CourseCard";
 
 const Tab = ["Yoga", "Meditation", "Gym"];
 const ExploreMore = () => {
@@ -15,8 +16,10 @@ const ExploreMore = () => {
   const setMyCards = (val) => {
     setCurrentTab(val);
     const res = HomePageExplore.filter((data) => data.tags === val);
-    setContent(res[0].courses);
-    setCurrentCard(res[0].courses[0].heading);
+    if (res.length > 0) {
+      setContent(res[0].courses);
+      setCurrentCard(res[0].courses[0].heading);
+    }
   };
 
   return (
@@ -35,7 +38,7 @@ const ExploreMore = () => {
             <div
               className={`text-[16px] w-fit py-2 px-4 flex flex-row items-center gap-2
                 ${
-                  currentTab == ele
+                  currentTab === ele
                     ? "bg-amber-200 text-black font-medium"
                     : "text-amber-200 "
                 } hover:bg-gray-200 hover:text-black 
@@ -43,8 +46,25 @@ const ExploreMore = () => {
               key={index}
               onClick={() => setMyCards(ele)}
             >
+              {console.log(ele)}
               {ele}
             </div>
+          );
+        })}
+      </div>
+
+      <div className="lg:h-[150px]"></div>
+      {/* course card ka group */}
+
+      <div className="flex flex-row gap-10 justify-between w-full">
+        {content.map((element, index) => {
+          return (
+            <CourseCard
+              key={index}
+              cardData={element}
+              currentCard={currentCard}
+              setCurrentCard={setCurrentCard}
+            />
           );
         })}
       </div>
