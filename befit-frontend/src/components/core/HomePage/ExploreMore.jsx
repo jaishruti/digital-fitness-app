@@ -53,10 +53,10 @@ const ExploreMore = () => {
         })}
       </div>
 
-      <div className="lg:h-[150px]"></div>
+      {/* <div className="lg:h-[150px]"></div> */}
       {/* course card ka group */}
 
-      <div className="flex flex-row gap-10 justify-between w-full">
+      <div className="flex flex-col md:flex-row my-2 gap-2 justify-between px-4 sm:px-6 lg:px-8 items-center">
         {content.map((element, index) => {
           return (
             <CourseCard
