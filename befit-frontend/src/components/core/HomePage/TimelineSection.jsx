@@ -31,7 +31,7 @@ const timeline = [
 
 const TimelineSection = () => {
   return (
-    <div className="w-fit flex flex-col lg:flex-row gap-8 items-center px-4 jsutify-center">
+    <div className="w-fit flex flex-col lg:flex-row gap-9 items-center px-4 jsutify-center">
       <div className="w-[50%] flex flex-col gap-5">
         {timeline.map((element, index) => {
           return (
@@ -56,7 +56,7 @@ const TimelineSection = () => {
         />
 
         <div
-          className="absolute bg-caribbeangreen-700 flex flex-row text-white uppercase py-7
+          className="absolute bg-amber-900 flex flex-row text-white uppercase py-7
                             left-[50%] translate-x-[-50%] translate-y-[-50%]"
         >
           <div className="flex flex-row gap-5 items-center border-r border-caribbeangreen-300 px-7">
