@@ -4,15 +4,17 @@ const ReviewData = [
     image: { Instructor },
     name: "Medha",
     location: "Pune",
-    description: "Unique experience at BeFit",
+    description:
+      "We had a uique experience at BeFit. The trainers are very professional and experienced. THey provide the best practices and fitness guide",
     rating: "4.3",
-    star: 5,
+    star: 3,
   },
   {
     image: { Instructor },
     name: "Niti",
     location: "Pune",
-    description: "Unique experience at BeFit",
+    description:
+      "We had a uique experience at BeFit. The trainers are very professional and experienced. THey provide the best practices and fitness guide",
     rating: "4.3",
     star: 4,
   },
@@ -20,7 +22,8 @@ const ReviewData = [
     image: { Instructor },
     name: "Richa",
     location: "Pune",
-    description: "Unique experience at BeFit",
+    description:
+      "We had a uique experience at BeFit. The trainers are very professional and experienced. THey provide the best practices and fitness guide",
     rating: "4.3",
     star: 3,
   },
@@ -28,7 +31,8 @@ const ReviewData = [
     image: { Instructor },
     name: "Vaidya",
     location: "Pune",
-    description: "Unique experience at BeFit",
+    description:
+      "We had a uique experience at BeFit. The trainers are very professional and experienced. THey provide the best practices and fitness guide",
     rating: "4.3",
     star: 4,
   },
@@ -36,8 +40,10 @@ const ReviewData = [
     image: { Instructor },
     name: "Richa",
     location: "Pune",
-    description: "Unique experience at BeFit",
+    description:
+      "We had a uique experience at BeFit. The trainers are very professional and experienced. THey provide the best practices and fitness guide",
     rating: "4.3",
     star: 5,
   },
 ];
+export default ReviewData;
