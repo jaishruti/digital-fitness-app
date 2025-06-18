@@ -6,6 +6,8 @@ import Banner from "../assets/Images/banner.mp4";
 import QuoteBlock from "../components/core/HomePage/QuoteBlock";
 import ExploreMore from "../components/core/HomePage/ExploreMore";
 import TimelineSection from "../components/core/HomePage/TimelineSection";
+import InstructorSection from "../components/core/HomePage/InstructorSection";
+import ReviewSection from "../components/core/HomePage/ReviewSection";
 
 const Home = () => {
   return (
@@ -100,17 +102,17 @@ text-black justify-between px-4 sm:px-6 lg:px-8"
       </div>
       {/* Section-2 - */}
 
-      <div className="flex flex-col gap-4 sm:gap-6 lg:gap-8 mx-auto px-4 sm:px-6 lg:px-8 items-center max-w-6xl">
+      <div className="w-full flex flex-col gap-4 sm:gap-6 lg:gap-8 mx-auto px-4 sm:px-6 lg:px-8 text-center items-center max-w-6xl">
         {/* Heading Section */}
         <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl flex flex-col font-semibold leading-tight text-center sm:text-left max-w-4xl">
-          Get the right mindfulness and peace for a
+          Get the right mindfulness for a
           <HighlightText text={" Perfect Balanced Life "} />
         </div>
 
         {/* Content and CTA Section */}
-        <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 mt-2 sm:mt-4 lg:mt-6 w-full items-center lg:items-start">
+        <div className="w-[70%] flex flex-col lg:flex-row gap-4 sm:gap-6 lg:gap-8 mt-2 sm:mt-4 lg:mt-6 items-center lg:items-start justify-center">
           {/* Description Text */}
-          <div className="text-sm sm:text-base lg:text-lg leading-relaxed text-center lg:text-left max-w-2xl lg:flex-1">
+          <div className="text-sm sm:text-base lg:text-lg leading-relaxed lg:text-left max-w-2xl lg:flex-1">
             The modern meditation dictates its own terms. Today, to be a yoga
             specialist requires more than professional skills.
           </div>
@@ -124,13 +126,19 @@ text-black justify-between px-4 sm:px-6 lg:px-8"
         </div>
 
         {/* Timeline Section */}
-        <div className="w-full mt-4 sm:mt-6 lg:mt-8">
+        <div className="w-[80%] mt-4 sm:mt-6 lg:mt-8">
           <TimelineSection />
         </div>
 
         {/* Commented section preserved */}
         {/* <LearningLanguageSection /> */}
       </div>
+      <div className="w-full flex flex-col gap-8 items-center bg-amber-900">
+        <InstructorSection />
+        <ReviewSection />
+      </div>
+
+      {/* <Footer /> */}
     </div>
   );
 };
